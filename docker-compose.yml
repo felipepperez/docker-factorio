@@ -8,3 +8,6 @@ services:
     restart: always
     networks:
       - container-network
+networks:
+  container-network:
+    external: true
