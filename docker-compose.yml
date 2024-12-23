@@ -1,0 +1,10 @@
+version: '3'
+services:
+  docker-factorio:
+    build: .
+    container_name: docker-factorio
+    volumes:
+      - ../volumes/factorio:/usr/app/saves
+    restart: always
+    networks:
+      - container-network
