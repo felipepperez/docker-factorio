@@ -5,7 +5,8 @@ services:
     container_name: docker-factorio
     restart: always
     volumes:
-      - ../volumes/factorio:/app/saves
+      - ../volumes/factorio/saved-games:/app/saves
+      - ../volumes/factorio/last-game/last-game.txt:/app/last-game.txt
     networks:
       - container-network
 networks:
