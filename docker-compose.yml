@@ -3,8 +3,6 @@ services:
   docker-factorio:
     build: .
     container_name: docker-factorio
-    volumes:
-      - ../volumes/factorio:/app/factorio/saves
     restart: always
     networks:
       - container-network
